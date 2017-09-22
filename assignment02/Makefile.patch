@@ -1,0 +1,4 @@
+4c4
+< EXTRAVERSION = -rc1
+---
+> EXTRAVERSION = -thor_kernel
