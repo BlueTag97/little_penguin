@@ -3,17 +3,20 @@
 #include <linux/delay.h>
 #include <linux/slab.h>
 
+/*
+ * That was a long sleep, tell userspace about it
+ */
+
 int	do_work(int *my_int, int retval)
 {
 	int	x;
 	int	y = *my_int;
 	int	z;
 
-	for (x = 0; x < my_int; ++x)
+	for (x = 0; x < *my_int; ++x)
 		udelay(10);
 
 	if (y < 10)
-		/* That was a long sleep, tell userspace about it */
 		pr_info("We slept a long time!");
 
 	z = x * y;
@@ -25,7 +28,7 @@ int	my_init(void)
 	int	x = 10;
 
 	x = do_work(&x, x);
-	return x;
+	return 0;
 }
 
 void	my_exit(void)

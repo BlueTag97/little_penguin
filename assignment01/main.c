@@ -10,15 +10,6 @@ MODULE_VERSION("17.08.21");
 
 static int __init hello_init(void)
 {
-	/*
-	struct timeval	tv;
-	struct tm	tm_s;
-
-	do_gettimeofday(&tv);
-	time_to_tm(tv.tv_sec, 0, &tm_s);
-	printk(KERN_INFO "[%d:%d:%d] Hello World! \n", tm_s.tm_hour,
-		tm_s.tm_min, tm_s.tm_sec);
-	*/
 	printk(KERN_INFO "Hello World!\n");
 	return (0);
 }
