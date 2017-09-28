@@ -1,7 +1,5 @@
 #include <linux/module.h>
 #include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/time.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("emmmhla");

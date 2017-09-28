@@ -1,3 +1,8 @@
+From: emmmhla <emmmhla@student.wethinkcode.co.za>
+Subject: [PATCH 4.14-rc1 1/1] Makefile: Extraversion field changed
+
+Signed-off-by: emmmhla <emmmhla@student.wethinkcode.co.za>
+---
 4c4
 < EXTRAVERSION = -rc1
 ---
